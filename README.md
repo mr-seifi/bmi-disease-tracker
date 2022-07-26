@@ -53,27 +53,27 @@
 ## API
 
 ### Swagger
-- endpoint: __/__
+- endpoint: `/`
 
 ### Signup
-- endpoint: __account/signup/__
-- method: __POST__
+- endpoint: `account/signup/`
+- method: `POST`
 - params: `email, password*, age*, sex*, weight*, height*`
 - permissions: `AllowAny`
 > You can sign up as a person in our system by providing above parameters after that you are given a token which 
 > is used to have some tests like blood test and see the result of your test (recomms/risks)
 
 ### Submit a Blood Test
-- endpoint: __bio/bloodtest/__
-- method: __POST__
+- endpoint: `bio/bloodtest/`
+- method: `POST`
 - params: `urea*, cr*, hba1c*, chol*, tg*, hdl*, ldl*, vldl*`
 - permissions: `IsAuthenticated`
 > To submit a blood test you have to sign up first, after that, put your token into your header of requests like this: 
 > `Authorization: Token <token>` hence system identifies you as a valid user.
 
 ### Get result of your Blood Tests (Recommendations/Risks)
-- endpoint: __bio/bloodtest/__
-- method: __GET__
+- endpoint: `bio/bloodtest/`
+- method: `GET`
 - params:
 - permissions: `IsAuthenticated`
 > By calling this endpoint, you can have a list of blood test result.
