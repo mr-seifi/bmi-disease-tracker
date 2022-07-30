@@ -4,8 +4,7 @@ from celery.schedules import crontab
 
 # Set the default Django settings module for the 'celery' program.
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bmi_disease_tracker.settings')
-app = Celery('bmi_disease_tracker',              broker='amqp://',
-             backend='amqp://',)
+app = Celery('bmi_disease_tracker')
 
 # Using a string here means the worker doesn't have to serialize
 # the configuration object to child processes.

@@ -77,3 +77,21 @@
 - params:
 - permissions: `IsAuthenticated`
 > By calling this endpoint, you can have a list of blood test result.
+
+
+## Run Project
+
+### Run Server
+```shell
+python manage.py runserver
+```
+
+### Run beat
+```shell
+celery -A bmi_disease_tracker beat -l info
+```
+
+### Run worker
+```shell
+celery -A bmi_disease_tracker worker -l info
+```

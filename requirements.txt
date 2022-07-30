@@ -2,11 +2,13 @@ celery==5.2.7
 Django==4.0.6
 djangorestframework==3.13.1
 django-celery-beat==2.3.0
+python-dotenv==0.20.0
 drf-yasg==1.21.3
 ipython==8.4.0
 jupyter==1.0.0
 matplotlib==3.5.2
 pandas==1.4.3
+psycopg2--binary==2.9.3
 pytz==2022.1
 django-redis==5.2.0
 seaborn==0.11.2
